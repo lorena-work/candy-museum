@@ -101,30 +101,110 @@
       </section>
 
       <section class="container-fluid px-0">
-        <div class="row align-items-center">
-          <div class="col-md-6">
+        <div class="row align-items-center content">
+          <div class="col-md-6 order-2 order-md-1">
             <img
               src="imgs/milk.png"
               alt="milk jugs with donuts skewered on straws"
               class="img-fluid"
             />
           </div>
-          <div class="col-md-6 text-center">
-            <h2>MUSEUM OF CANDY</h2>
-            <img src="imgs/lolli_icon.png" alt="white lollipop icon" />
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod
-              molestias praesentium. Ut tempora accusamus mollitia, fugit,
-              libero alias esse ipsa iusto iure doloribus eius perspiciatis in
-              autem at cumque. Reprehenderit voluptatibus mollitia consequuntur
-              est nam necessitatibus explicabo velit magni voluptates delectus
-              ipsum inventore at illo alias dicta temporibus quis tempora, in
-              eaque? Beatae unde tempora, debitis ut laudantium odio?
-            </p>
+          <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+                <h2>MUSEUM OF CANDY</h2>
+                <img
+                  src="imgs/lolli_icon.png"
+                  alt="white lollipop icon"
+                  class="d-none d-lg-inline"
+                />
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  quod molestias praesentium. Ut tempora accusamus mollitia,
+                  fugit, libero alias esse ipsa iusto iure doloribus eius
+                  perspiciatis in autem at cumque. Reprehenderit voluptatibus
+                  mollitia consequuntur est nam necessitatibus explicabo velit
+                  magni voluptates delectus ipsum inventore at illo alias dicta
+                  temporibus quis tempora, in eaque? Beatae unde tempora,
+                  debitis ut laudantium odio?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center content">
+          <div class="col-md-6 order-2">
+            <img
+              src="imgs/gumball.png"
+              alt="milk jugs with donuts skewered on straws"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 text-center order-1">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+                <h2>MUSEUM OF CANDY</h2>
+                <img
+                  src="imgs/lolli_icon.png"
+                  alt="white lollipop icon"
+                  class="d-none d-lg-inline"
+                />
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  quod molestias praesentium. Ut tempora accusamus mollitia,
+                  fugit, libero alias esse ipsa iusto iure doloribus eius
+                  perspiciatis in autem at cumque. Reprehenderit voluptatibus
+                  mollitia consequuntur est nam necessitatibus explicabo velit
+                  magni voluptates delectus ipsum inventore at illo alias dicta
+                  temporibus quis tempora, in eaque? Beatae unde tempora,
+                  debitis ut laudantium odio?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center content">
+          <div class="col-md-6 order-2 order-md-1">
+            <img
+              src="imgs/sprinkles.png"
+              alt="milk jugs with donuts skewered on straws"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 info mb-5 mb-md-0">
+                <h2>MUSEUM OF CANDY</h2>
+                <img
+                  src="imgs/lolli_icon.png"
+                  alt="white lollipop icon"
+                  class="d-none d-lg-inline"
+                />
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  quod molestias praesentium. Ut tempora accusamus mollitia,
+                  fugit, libero alias esse ipsa iusto iure doloribus eius
+                  perspiciatis in autem at cumque. Reprehenderit voluptatibus
+                  mollitia consequuntur est nam necessitatibus explicabo velit
+                  magni voluptates delectus ipsum inventore at illo alias dicta
+                  temporibus quis tempora, in eaque? Beatae unde tempora,
+                  debitis ut laudantium odio?
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- jQuery script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap Script -->
     <script
@@ -132,5 +212,22 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Popper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
